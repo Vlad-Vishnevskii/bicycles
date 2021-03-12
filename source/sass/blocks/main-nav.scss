@@ -39,9 +39,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 9px;
+  width: 830px;
 
   @include tablets {
     flex-direction: column;
+    width: auto;
   }
 }
 

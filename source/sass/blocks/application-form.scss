@@ -21,6 +21,7 @@
   @include phones {
     padding-top: 6px;
     padding-left: 25px;
+    width: 288px;
   }
 }
 
@@ -64,4 +65,8 @@
   border: none;
   letter-spacing: 0.1px;
   padding: 0;
+
+  @include phones {
+    width: 288px;
+  }
 }
