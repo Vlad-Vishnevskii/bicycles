@@ -42,7 +42,7 @@
     </symbol>
   </svg>
   <header class="header">
-    <div class="mobile-header">
+    <!-- <div class="mobile-header">
       <div class="mobile-header__top">
         <img src="img/logo-desktop.png" alt="Moon">
       <a class="mobile-header__button mobile-header__button_no-js" href="#">
@@ -59,7 +59,7 @@
           Наш магазин отбирает только самые лучшие велосипеды для продажи
         </p>
       </div>
-    </div>
+    </div> -->
     <nav class="main-nav container main-nav_no-js">
       <ul class="main-nav__list">
         <li class="main-nav__close main-nav__close_no-js">
@@ -101,9 +101,16 @@
         </li>
       </ul>
     </nav>
-    <section class="main-info container">
+    <section class="main-info">
       <div class="main-info__left">
-        <img src="img/logo-desktop.png" alt="Moon">
+        <div class="mobile-top">
+          <img src="img/logo-desktop.png" alt="Moon">
+          <a class="mobile-top__button mobile-top__button_no-js" href="#">
+            <svg width="50" height="50">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </a>
+        </div>
         <h1>
           Мы продаем велосипеды
         </h1>
@@ -128,6 +135,6 @@
     </section>
   </header>
 
-  <!-- <script src="/js/script.js"></script> -->
+  <script src="/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+.mobile-top {
+  @include tablets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.mobile-top__button {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+}
+
+.mobile-top__button_no-js {
+  display: none;
+}

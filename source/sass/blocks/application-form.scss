@@ -2,7 +2,7 @@
   margin-bottom: 20px;
 }
 
-.application-form__field  input {
+.application-form__field input {
   width: 100%;
   height: 48px;
   border-radius: 4px;
@@ -25,10 +25,14 @@
 }
 
 .application-form__field:last-of-type {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
+
+  @include phones {
+    margin-bottom: 17px;
+  }
 }
 
-.application-form__field  input::-webkit-input-placeholder {
+.application-form__field input::-webkit-input-placeholder {
   font-family: $base-font;
   font-weight: normal;
   font-style: normal;
@@ -38,7 +42,7 @@
   letter-spacing: 0.3px;
 }
 
-.application-form__field  input::-moz-placeholder {
+.application-form__field input::-moz-placeholder {
   font-family: $base-font;
   font-style: normal;
   font-weight: normal;
@@ -48,7 +52,7 @@
   letter-spacing: 0.3px;
 }
 
-.application-form input[type="submit"]  {
+.application-form input[type="submit"] {
   background: $turquoise;
   border-radius: 6px;
   height: 52px;
@@ -61,4 +65,3 @@
   letter-spacing: 0.1px;
   padding: 0;
 }
-
