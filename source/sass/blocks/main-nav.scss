@@ -1,6 +1,34 @@
 .main-nav {
   width: 873px;
   padding-top: 21px;
+  padding-left: 16px;
+  padding-right: 25px;
+  border-bottom: 1px solid $white-opacity-extra;
+
+  @include tablets {
+    width: auto;
+    padding: 0;
+    display: none;
+    border: none;
+    background: $white;
+    padding-bottom: 115px;
+  }
+}
+
+.main-nav_no-js {
+  display: block;
+
+  @include tablets {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+}
+
+.main-nav_open {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .main-nav__list {
@@ -8,9 +36,25 @@
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid $white-opacity-extra;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding-bottom: 9px;
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.main-nav__item {
+  @include tablets {
+    background-color: $grey-menu;
+    margin-bottom: 30px;
+    padding-left: 16px;
+    padding-right: 24px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .main-nav__link {
@@ -21,4 +65,40 @@
   letter-spacing: -0.005em;
   color: $white-opacity;
   opacity: 0.7;
+
+  @include tablets {
+    color: $light-black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.main-nav__link svg {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+}
+
+.main-nav__close {
+  display: none;
+
+  @include tablets {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-right: 13px;
+    margin-bottom: 60px;
+  }
+}
+
+.main-nav__close_no-js {
+  display: none;
 }

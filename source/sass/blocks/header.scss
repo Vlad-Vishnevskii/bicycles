@@ -2,4 +2,10 @@
   background: url("/img/bike-background-desktop.jpg") no-repeat;
   background-position: center;
   min-height: 825px;
+  background-size: cover;
+
+  @include tablets {
+    background: none;
+    min-height: initial;
+  }
 }

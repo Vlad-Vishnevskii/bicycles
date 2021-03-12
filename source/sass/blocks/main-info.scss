@@ -1,0 +1,78 @@
+.main-info {
+  width: 879px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 255px;
+
+  @include tablets {
+    width: auto;
+    margin-top: 64px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main-info__left {
+  width: 393px;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.main-info__left h1 {
+  color: $white;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: 1.56px;
+  margin-top: 28px;
+  margin-bottom: 23px;
+}
+
+.main-info__left p {
+  color: $white-opacity-low;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.main-info__right {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablets {
+    width: 322px;
+  }
+
+  @include phones {
+    width: 100%;
+  }
+}
+
+.main-info__right  h2 {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: $white;
+  text-align: center;
+  margin-top: 7px;
+  letter-spacing: 0.3px;
+  margin-bottom: 17px;
+
+  @include tablets {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: $black;
+    letter-spacing: 0;
+    margin-bottom: 29px;
+  }
+
+  @include phones {
+    margin-bottom: 19px;
+  }
+}
+
+

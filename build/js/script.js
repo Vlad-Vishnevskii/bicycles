@@ -1,15 +1,22 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+const mainNav = document.querySelector(`.main-nav`);
+const mainNavClose = mainNav.querySelector(`.main-nav__close`);
+const burgerButton = document.querySelector(`.mobile-header__button`);
 
-pageHeader.classList.remove('page-header--nojs');
+mainNav.classList.remove(`main-nav_no-js`);
+mainNavClose.classList.remove(`main-nav__close_no-js`);
+burgerButton.classList.remove(`mobile-header__button_no-js`);
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+const closeMenu = function () {
+  mainNav.classList.remove(`main-nav_open`)
+  mainNavClose.removeEventListener(`click`, closeMenu)
+};
+
+const openMenu = function () {
+  if (!mainNav.classList.contains(`main-nav_open`)) {
+    mainNav.classList.add(`main-nav_open`)
+    mainNavClose.addEventListener(`click`, closeMenu)
   }
-});
+};
+
+burgerButton.addEventListener(`click`, openMenu);
