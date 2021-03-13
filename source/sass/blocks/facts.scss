@@ -5,6 +5,10 @@
   padding-top: 127px;
   padding-bottom: 131px;
 
+  @include desktop-min {
+    width: 100%;
+  }
+
   @include tablets {
     width: 564px;
     padding-top: 49px;
@@ -41,8 +45,15 @@
   display: flex;
   flex-wrap: wrap;
 
+  @include desktop-min {
+    justify-content: space-around;
+  }
+
   @include tablets {
+    padding-left: 0;
+    padding-right: 0;
     margin-top: 10px;
+    justify-content: initial;
   }
 }
 
@@ -60,6 +71,10 @@
   letter-spacing: 0.4px;
   margin-right: 38px;
   margin-bottom: 20px;
+
+  @include desktop-min {
+    margin-right: 0;
+  }
 
   @include tablets {
     margin-right: 30px;
