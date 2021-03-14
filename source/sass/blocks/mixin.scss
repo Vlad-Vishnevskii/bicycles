@@ -1,3 +1,9 @@
+@mixin desktop-middle {
+  @media screen and (max-width: 1290px) {
+    @content;
+  }
+}
+
 @mixin desktop-min {
   @media screen and (max-width: 1170px) {
     @content;

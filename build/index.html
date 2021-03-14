@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
   <title>Велосипеды</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body class="page__body">
   <svg style="display: none">
     <symbol viewBox="0 0 26 20" fill="none" id="icon-email">
@@ -29,12 +31,12 @@
     </symbol>
     <symbol viewBox="0 0 8 12" fill="none" id="icon-link">
       <g clip-path="url(#clip0)">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F" fill-opacity="0.5"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F" fill-opacity="0.5"></path>
       </g>
       <defs>
-      <clipPath id="clip0">
-      <rect width="12" height="7.4" fill="white" transform="translate(0 12) rotate(-90)"></rect>
-      </clipPath>
+        <clipPath id="clip0">
+          <rect width="12" height="7.4" fill="white" transform="translate(0 12) rotate(-90)"></rect>
+        </clipPath>
       </defs>
     </symbol>
     <symbol viewBox="0 0 24 25" fill="none" id="icon-close">
@@ -128,7 +130,50 @@
         <li class="facts__item">Большой выбор крутых аксессуаров!</li>
         <li class="facts__item">Профессиональные консультации!</li>
       </ol>
+    </section>
 
+    <section class="types-of-bicycles">
+      <h2>
+        Виды велосипедов
+      </h2>
+      <ul class="types-of-bicycles__list">
+        <li class="types-of-bicycles__item">
+          <div class="types-of-bicycles__img-wrapper">
+            <picture>
+              <!-- <source type="image/webp" srcset="img/***.webp" media="(max-width: 767px)">
+                <source type="image/webp" srcset="" media="(max-width: 1023px)">
+                <source type="image/webp" srcset=""> -->
+              <source srcset="img/road-bike-tablet.jpg" media="(max-width: 1023px)">
+              <img src="img/road-bike-desktop.jpg" alt="Dелосипед на фоне стены">
+            </picture>
+          </div>
+          <p>Дорожный велосипед</p>
+        </li>
+        <li class="types-of-bicycles__item">
+          <div class="types-of-bicycles__img-wrapper">
+            <picture>
+              <!-- <source type="image/webp" srcset="img/***.webp" media="(max-width: 767px)">
+                <source type="image/webp" srcset="" media="(max-width: 1023px)">
+                <source type="image/webp" srcset=""> -->
+              <source srcset="img/mountain-bike-tablet.jpg" media="(max-width: 1023px)">
+              <img src="img/mountain-bike-desktop.jpg" alt="Велосипед в горах">
+            </picture>
+          </div>
+          <p>Горный велосипед</p>
+        </li>
+        <li class="types-of-bicycles__item">
+          <div class="types-of-bicycles__img-wrapper">
+            <picture>
+              <!-- <source type="image/webp" srcset="img/***.webp" media="(max-width: 767px)">
+                <source type="image/webp" srcset="" media="(max-width: 1023px)">
+                <source type="image/webp" srcset=""> -->
+              <source srcset="img/small-bike-tablet.jpg" media="(max-width: 1023px)">
+              <img src="img/small-bike-desktop.jpg" alt="Розовый велосипед">
+            </picture>
+          </div>
+          <p>Детский велосипед</p>
+        </li>
+      </ul>
     </section>
 
   </main>
@@ -167,4 +212,5 @@
 
   <script src="/js/script.js"></script>
 </body>
+
 </html>
