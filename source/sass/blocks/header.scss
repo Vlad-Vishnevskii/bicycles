@@ -1,5 +1,6 @@
 .header {
-  background: url("/img/bike-background-desktop.jpg") no-repeat;
+  background: url("../img/bike-background-desktop.jpg") no-repeat;
+  background-color: $black;
   background-position: center;
   min-height: 825px;
   background-size: cover;

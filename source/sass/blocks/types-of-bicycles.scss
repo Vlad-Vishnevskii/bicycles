@@ -1,11 +1,15 @@
 .types-of-bicycles {
   background-color: $light-blue;
   padding-top: 120px;
-  padding-bottom: 147px;
+  padding-bottom: 121px;
 
   @include tablets {
     padding-top: 29px;
     padding-bottom: 18px;
+  }
+
+  @include phones {
+    padding-bottom: 9px;
   }
 }
 
