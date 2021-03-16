@@ -1,9 +1,14 @@
 .header {
-  background: url("../img/bike-background-desktop.jpg") no-repeat;
+  background: url("../img/bike-background-desktop@1x.jpg") no-repeat;
   background-color: $black;
   background-position: center;
   min-height: 825px;
-  background-size: cover;
+  background-size: contain;
+
+  @include retina {
+    background: url("../img/bike-background-desktop@2x.jpg") no-repeat;
+    background-size: contain;
+  }
 
   @include tablets {
     background: none;

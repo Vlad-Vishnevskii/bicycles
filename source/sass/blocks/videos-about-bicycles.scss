@@ -68,10 +68,14 @@
 
   @include tablets {
     top: -199px;
+    width: 503px;
+    height: 282px;
   }
 
   @include phones {
     top: -112px;
+    width: 288px;
+    height: 162px;
   }
 }
 

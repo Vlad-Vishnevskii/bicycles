@@ -66,6 +66,13 @@
 
   @include tablets {
     margin-top: 2px;
+    width: 698px;
+    height: 545px;
+  }
+
+  @include phones {
+    width: 320px;
+    height: 250px;
   }
 }
 
