@@ -3,11 +3,11 @@
   background-color: $black;
   background-position: center;
   min-height: 825px;
-  background-size: contain;
+  background-size: cover;
 
   @include retina {
     background: url("../img/bike-background-desktop@2x.jpg") no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   @include tablets {

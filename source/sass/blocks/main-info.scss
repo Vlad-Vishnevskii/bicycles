@@ -18,26 +18,23 @@
 
   @include tablets {
     width: 100%;
-    background: url("../img/bike-background-tablet@1x.jpg") no-repeat;
+    background-image: url("../img/bike-background-tablet@1x.jpg");
+    background-repeat: no-repeat;
     background-color: $black;
-    background-size: contain;
+    background-size: cover;
     min-height: 340px;
 
     @include retina {
-      background: url("../img/bike-background-tablet@2x.jpg") no-repeat;
-      background-size: contain;
+      background-image: url("../img/bike-background-tablet@2x.jpg");
     }
   }
 
   @include phones {
-    background: url("../img/bike-background-mobile@1x.jpg") no-repeat;
-    background-color: $black;
-    background-size: cover;
+    background-image: url("../img/bike-background-mobile@1x.jpg");
     min-height: 390px;
 
     @include retina {
-      background: url("../img/bike-background-mobile@2x.jpg") no-repeat;
-      background-size: contain;
+      background-image: url("../img/bike-background-mobile@2x.jpg");
     }
   }
 }
@@ -102,7 +99,7 @@
   }
 }
 
-.main-info__right {
+.main-info__right  form{
   width: 327px;
   display: flex;
   flex-direction: column;

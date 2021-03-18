@@ -5,15 +5,15 @@
   align-items: center;
   padding-bottom: 98px;
   margin: 0 auto;
-  margin-top: -305px;
+  margin-top: 222px;
 
   @include tablets {
     width: 100%;
-    margin-top: -155px;
+    margin-top: 131px;
   }
 
   @include phones {
-    margin-top: -63px;
+    margin-top: 103px;
   }
 }
 
@@ -68,6 +68,7 @@
     margin-top: 2px;
     width: 698px;
     height: 545px;
+    object-fit: cover;
   }
 
   @include phones {
@@ -108,6 +109,10 @@
 
 .page-footer__link svg {
   margin-right: 16px;
+}
+
+.page-footer__link_phone svg {
+  fill: $white;
 }
 
 .page-footer__link_email {

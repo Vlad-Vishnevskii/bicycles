@@ -74,6 +74,7 @@
 
 .types-of-bicycles__item img {
   position: relative;
+  border-radius: 10px;
 
   @include desktop-middle {
     width: 342px;
@@ -81,6 +82,7 @@
   }
 
   @include tablets {
+    object-fit: cover;
     width: 270px;
     height: 300px;
   }
@@ -112,20 +114,22 @@
 }
 
 .types-of-bicycles__item:nth-of-type(3n+1) .types-of-bicycles__img-wrapper::after {
-  content: "";
   position: absolute;
   display: block;
-  background: url("/img/large-ring-desktop.png");
+  content: "";
   width: 180px;
   height: 180px;
   top: 159px;
   left: -60px;
   z-index: 1;
+  background: transparent;
+  border-radius: 50%;
+  border: 27px solid $turquoise;
 
   @include tablets {
     width: 127px;
     height: 127px;
-    background: url("/img/large-ring-tablet.png");
+    border: 18px solid $turquoise;
     top: 197px;
     left: -39px;
   }
@@ -136,55 +140,53 @@
   }
 }
 
-.types-of-bicycles__item:nth-of-type(3n+2) .types-of-bicycles__img-wrapper::before {
-  content: "";
+.types-of-bicycles__item:nth-of-type(3n+2) .types-of-bicycles__img-wrapper::before,
+.types-of-bicycles__item:nth-of-type(3n+2) .types-of-bicycles__img-wrapper::after {
   position: absolute;
   display: block;
-  background: url("/img/square-desktop.png");
+  content: "";
   width: 47px;
   height: 47px;
-  top: -18px;
-  left: -19px;
   z-index: 5;
+  background-color: transparent;
+  border: 8px solid $turquoise;
 
   @include tablets {
     display: none;
   }
 }
 
-.types-of-bicycles__item:nth-of-type(3n+2) .types-of-bicycles__img-wrapper::after {
-  content: "";
-  position: absolute;
-  display: block;
-  background: url("/img/square-desktop.png");
-  width: 47px;
-  height: 47px;
-  bottom: -17px;
-  right: -21px;
-  z-index: 5;
+.types-of-bicycles__item:nth-of-type(3n+2) .types-of-bicycles__img-wrapper {
+  &::before {
+    top: -18px;
+    left: -19px;
+  }
 
-  @include tablets {
-    display: none;
+  &::after {
+    bottom: -17px;
+    right: -21px;
   }
 }
 
 .types-of-bicycles__item:nth-of-type(3n+3) .types-of-bicycles__img-wrapper::before {
-  content: "";
   position: absolute;
   display: block;
-  background: url("/img/small-ring-desktop.png");
+  content: "";
   width: 95px;
   height: 95px;
   top: -32px;
   right: -36px;
   z-index: 5;
+  background: transparent;
+  border-radius: 50%;
+  border: 17px solid $turquoise;
 
   @include tablets {
     width: 68px;
     height: 68px;
-    background: url("/img/small-ring-tablet.png");
     top: -20px;
     right: -25px;
+    border: 13px solid $turquoise;
   }
 
   @include phones {

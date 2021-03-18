@@ -25,7 +25,8 @@
 }
 
 .main-nav_open {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   width: 100%;
@@ -68,6 +69,10 @@
   color: $white-opacity;
   opacity: 0.7;
 
+  &:hover {
+    color: $white;
+  }
+
   @include tablets {
     color: $light-black;
     display: flex;
@@ -78,6 +83,10 @@
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.5px;
+
+    &:hover {
+      color: $black;
+    }
   }
 }
 
@@ -89,18 +98,20 @@
   }
 }
 
-.main-nav__close {
+.main-nav__close-btn {
   display: none;
+  background: none;
+  border: none;
 
   @include tablets {
-    display: flex;
-    justify-content: flex-end;
+    display: block;
+    align-self: flex-end;
     padding-top: 15px;
     padding-right: 13px;
     margin-bottom: 60px;
   }
 }
 
-.main-nav__close_no-js {
+.main-nav__close-btn_no-js {
   display: none;
 }
