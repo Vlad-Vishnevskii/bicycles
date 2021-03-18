@@ -105,6 +105,10 @@
   color: $black-opacity-extra;
   display: flex;
   align-items: center;
+
+  &:hover {
+    color: $black;
+  }
 }
 
 .page-footer__link svg {
