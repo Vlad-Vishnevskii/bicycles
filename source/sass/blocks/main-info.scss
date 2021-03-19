@@ -1,15 +1,17 @@
 .main-info {
-  width: 879px;
   display: flex;
   justify-content: space-between;
+  width: 879px;
   margin: 0 auto;
   margin-top: 255px;
 
   @include tablets {
-    width: auto;
-    margin-top: 0;
     flex-direction: column;
     align-items: center;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
   }
 }
 
@@ -18,11 +20,11 @@
 
   @include tablets {
     width: 100%;
+    min-height: 340px;
     background-image: url("../img/bike-background-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-color: $black;
     background-size: cover;
-    min-height: 340px;
 
     @include retina {
       background-image: url("../img/bike-background-tablet@2x.jpg");
@@ -30,8 +32,8 @@
   }
 
   @include phones {
-    background-image: url("../img/bike-background-mobile@1x.jpg");
     min-height: 390px;
+    background-image: url("../img/bike-background-mobile@1x.jpg");
 
     @include retina {
       background-image: url("../img/bike-background-mobile@2x.jpg");
@@ -52,23 +54,23 @@
 }
 
 .main-info__left h1 {
+  margin-top: 28px;
+  margin-bottom: 23px;
   color: $white;
   font-weight: bold;
   font-size: 46px;
   line-height: 64px;
   letter-spacing: 1.56px;
-  margin-top: 28px;
-  margin-bottom: 23px;
 
   @include tablets {
+    margin-top: 82px;
+    margin-bottom: 0;
     color: $white;
     font-weight: bold;
     font-size: 30px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.56px;
-    margin-top: 82px;
-    margin-bottom: 0;
   }
 
   @include phones {
@@ -83,15 +85,15 @@
   line-height: 32px;
 
   @include tablets {
+    width: 435px;
+    margin: 0 auto;
+    margin-top: 20px;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 32px;
     text-align: center;
     color: $white-opacity-low;
-    width: 435px;
-    margin: 0 auto;
-    margin-top: 20px;
   }
 
   @include phones {
@@ -99,14 +101,14 @@
   }
 }
 
-.main-info__right  form{
-  width: 327px;
+.main-info__right form {
   display: flex;
   flex-direction: column;
+  width: 327px;
 
   @include tablets {
-    margin-top: 65px;
     width: 322px;
+    margin-top: 65px;
   }
 
   @include phones {
@@ -117,22 +119,22 @@
 }
 
 .main-info__right h2 {
+  margin-top: 7px;
+  margin-bottom: 17px;
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
   color: $white;
   text-align: center;
-  margin-top: 7px;
   letter-spacing: 0.3px;
-  margin-bottom: 17px;
 
   @include tablets {
+    margin-bottom: 29px;
     font-size: 18px;
     line-height: 28px;
     text-align: center;
     color: $black;
     letter-spacing: 0;
-    margin-bottom: 29px;
   }
 
   @include phones {

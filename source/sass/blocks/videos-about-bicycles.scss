@@ -6,32 +6,32 @@
 }
 
 .videos-about-bicycles__text {
-  padding-top: 97px;
-  background-color: $black-background;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 97px;
+  width: 100%;
   min-height: 706px;
+  background-color: $black-background;
 
   @include tablets {
-    min-height: 413px;
     padding-top: 50px;
+    min-height: 413px;
   }
 
   @include phones {
-    min-height: 384px;
     padding-top: 65px;
+    min-height: 384px;
   }
 }
 
 .videos-about-bicycles h2 {
+  margin-bottom: 0;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   color: $white;
   letter-spacing: 0.5px;
-  margin-bottom: 0;
 
   @include tablets {
     font-size: 24px;
@@ -39,25 +39,25 @@
   }
 
   @include phones {
-    padding-right: 14px;
+    padding-right: 6px;
   }
 }
 
 .videos-about-bicycles__image-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
   align-items: center;
 }
 
 .videos-about-bicycles p {
+  margin-top: 20px;
+  margin-bottom: -45px;
+  width: 324px;
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
   color: $white-opacity;
-  width: 324px;
-  margin-top: 20px;
-  margin-bottom: -45px;
 
   @include tablets {
     width: 429px;
@@ -71,9 +71,9 @@
 
 .videos-about-bicycles img {
   position: relative;
+  top: 96px;
   display: block;
   padding-top: 10px;
-  top: 96px;
   width: 929px;
   height: 522px;
 
@@ -94,13 +94,13 @@
 .videos-about-bicycles__play-button {
   position: absolute;
   top: 327px;
+  display: inline-block;
+  padding: 0;
+  overflow: hidden;
   background: none;
   border: none;
   cursor: pointer;
   border-radius: 50%;
-  padding: 0;
-  display: inline-block;
-  overflow: hidden;
   vertical-align: middle;
 
   &:hover {

@@ -1,16 +1,10 @@
 .facts {
-  width: 1170px;
   display: flex;
   flex-direction: column;
   padding-top: 127px;
   padding-bottom: 131px;
 
-  @include desktop-min {
-    width: 100%;
-  }
-
   @include tablets {
-    width: 564px;
     padding-top: 49px;
     padding-bottom: 25px;
   }
@@ -46,7 +40,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @include desktop-min {
+  @include desktop-middle {
     justify-content: space-around;
   }
 
@@ -54,7 +48,7 @@
     padding-left: 0;
     padding-right: 0;
     margin-top: 10px;
-    justify-content: initial;
+    justify-content: center;
   }
 }
 
@@ -73,7 +67,7 @@
   margin-right: 38px;
   margin-bottom: 20px;
 
-  @include desktop-min {
+  @include desktop-middle {
     margin-right: 0;
   }
 

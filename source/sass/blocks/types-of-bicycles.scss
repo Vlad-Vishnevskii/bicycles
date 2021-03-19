@@ -1,7 +1,7 @@
 .types-of-bicycles {
-  background-color: $light-blue;
   padding-top: 120px;
   padding-bottom: 121px;
+  background-color: $light-blue;
 
   @include tablets {
     padding-top: 29px;
@@ -14,31 +14,31 @@
 }
 
 .types-of-bicycles h2 {
+  margin-top: 27px;
+  margin-bottom: 0;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   text-align: center;
   color: $special-black;
-  margin-bottom: 0;
-  margin-top: 27px;
 
   @include tablets {
+    margin-top: 24px;
     font-size: 24px;
     line-height: 41px;
-    margin-top: 24px;
   }
 }
 
 .types-of-bicycles__list {
-  width: 1290px;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1290px;
   margin: 0 auto;
   padding: 0;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content: center;
   padding-left: 70px;
   padding-right: 70px;
+  list-style: none;
 
   @include desktop-middle {
     width: 100%;
@@ -58,7 +58,7 @@
 .types-of-bicycles__item {
   margin-right: 50px;
 
-  @include desktop-min {
+  @include desktop-middle {
     margin-right: 0;
   }
 
@@ -82,9 +82,9 @@
   }
 
   @include tablets {
-    object-fit: cover;
     width: 270px;
     height: 300px;
+    object-fit: cover;
   }
 
   @include phones {
@@ -93,8 +93,8 @@
 }
 
 .types-of-bicycles__img-wrapper {
-  display: block;
   position: relative;
+  display: block;
 }
 
 .types-of-bicycles__item:nth-of-type(3n+1) img {
@@ -115,23 +115,23 @@
 
 .types-of-bicycles__item:nth-of-type(3n+1) .types-of-bicycles__img-wrapper::after {
   position: absolute;
-  display: block;
   content: "";
-  width: 180px;
-  height: 180px;
   top: 159px;
   left: -60px;
   z-index: 1;
+  display: block;
+  width: 180px;
+  height: 180px;
   background: transparent;
   border-radius: 50%;
   border: 27px solid $turquoise;
 
   @include tablets {
+    top: 197px;
+    left: -39px;
     width: 127px;
     height: 127px;
     border: 18px solid $turquoise;
-    top: 197px;
-    left: -39px;
   }
 
   @include phones {
@@ -143,11 +143,11 @@
 .types-of-bicycles__item:nth-of-type(3n+2) .types-of-bicycles__img-wrapper::before,
 .types-of-bicycles__item:nth-of-type(3n+2) .types-of-bicycles__img-wrapper::after {
   position: absolute;
-  display: block;
   content: "";
+  z-index: 5;
+  display: block;
   width: 47px;
   height: 47px;
-  z-index: 5;
   background-color: transparent;
   border: 8px solid $turquoise;
 
@@ -170,22 +170,22 @@
 
 .types-of-bicycles__item:nth-of-type(3n+3) .types-of-bicycles__img-wrapper::before {
   position: absolute;
-  display: block;
   content: "";
-  width: 95px;
-  height: 95px;
   top: -32px;
   right: -36px;
   z-index: 5;
+  display: block;
+  width: 95px;
+  height: 95px;
   background: transparent;
   border-radius: 50%;
   border: 17px solid $turquoise;
 
   @include tablets {
-    width: 68px;
-    height: 68px;
     top: -20px;
     right: -25px;
+    width: 68px;
+    height: 68px;
     border: 13px solid $turquoise;
   }
 
