@@ -84,6 +84,7 @@
   justify-content: space-between;
   width: 566px;
   margin-top: 41px;
+  flex-wrap: wrap;
 
   @include tablets {
     width: 577px;
@@ -107,6 +108,7 @@
   line-height: 22px;
   text-decoration: none;
   color: $black-opacity-extra;
+  margin-bottom: 10px;
 
   &:hover {
     color: $black;
@@ -134,12 +136,8 @@
 }
 
 .page-footer__link_phone {
-  text-decoration: underline;
+  text-decoration: none;
   padding-right: 20px;
-
-  @include tablets {
-    text-decoration: none;
-  }
 
   @include phones {
     padding-right: 15px;

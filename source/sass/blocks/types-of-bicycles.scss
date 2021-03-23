@@ -33,15 +33,14 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 1290px;
-  margin: 0 auto;
+  width: 100%;
   padding: 0;
+  margin: 0;
   padding-left: 70px;
   padding-right: 70px;
   list-style: none;
 
   @include desktop-middle {
-    width: 100%;
     justify-content: space-around;
   }
 
@@ -59,15 +58,16 @@
   margin-right: 50px;
 
   @include desktop-middle {
-    margin-right: 0;
+    margin-right: 25px;
   }
 
   @include tablets {
-    margin: 0 5px;
+    margin: 0 15px;
     margin-bottom: 50px;
   }
 
   @include phones {
+    margin: 0 25px;
     margin-bottom: 42px;
   }
 }
@@ -216,10 +216,11 @@
 
   @include tablets {
     margin-top: 0;
+    margin-right: 15px;
   }
 
   @include phones {
-    margin-right: 5px;
+    margin-right: 25px;
   }
 }
 

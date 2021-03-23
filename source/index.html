@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page__body">
+<body>
   <header class="header">
     <nav class="main-nav container main-nav_no-js">
       <button type="button" class="main-nav__close-btn main-nav__close-btn_no-js">
@@ -60,9 +60,9 @@
       <div class="main-info__left">
         <div class="mobile-top">
           <picture>
-            <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
-            <!-- 1х: 68px; 2x: 136px -->
-            <img src="img/logo.png" alt="Логотип страницы" width="67" height="20">
+            <!-- <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x"> -->
+            <!-- 1х: 67px; 2x: 136px -->
+            <img src="img/logo@1x.png" alt="Логотип страницы" width="67" height="20">
           </picture>
           <a class="mobile-top__button mobile-top__button_no-js" href="#">
             <svg width="50" height="50">
@@ -77,18 +77,18 @@
           Наш магазин отбирает только самые лучшие велосипеды для продажи
         </p>
       </div>
-      <div class="main-info__right">
+      <div class="main-info__right application-form">
         <form action="https://echo.htmlacademy.ru">
           <h2>
             Заполните поля ниже и мы подберем велосипед Вашей мечты
           </h2>
           <div class="application-form__field">
             <label for="user-name">Имя</label>
-            <input id="user-name" type="text" placeholder="Введите Ваше Имя" required>
+            <input id="user-name" type="text" placeholder="Введите Ваше Имя" required name="user-name">
           </div>
           <div class="application-form__field">
             <label for="user-phone">Номер телефона</label>
-            <input id="user-phone" type="tel" placeholder="Введите Ваш номер телефона" required pattern="[0-9]{11}">
+            <input id="user-phone" type="tel" placeholder="Введите Ваш номер телефона" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" name="number">
           </div>
           <button class="button" type="submit">Подобрать велосипед мечты</button>
         </form>
@@ -170,6 +170,9 @@
             <svg width="65" height="65">
               <use xlink:href="img/sprite_auto.svg#icon-play"></use>
             </svg>
+            <span class="visually-hidden">
+              Воспроизвести
+            </span>
           </button>
         </div>
       </div>
