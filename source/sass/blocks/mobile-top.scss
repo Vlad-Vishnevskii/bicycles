@@ -11,6 +11,11 @@
 
   @include tablets {
     display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
   }
 }
 

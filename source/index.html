@@ -60,15 +60,15 @@
       <div class="main-info__left">
         <div class="mobile-top">
           <picture>
-            <!-- <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x"> -->
+            <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
             <!-- 1х: 67px; 2x: 136px -->
-            <img src="img/logo@1x.png" alt="Логотип страницы" width="67" height="20">
+            <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Логотип страницы" width="67" height="20">
           </picture>
-          <a class="mobile-top__button mobile-top__button_no-js" href="#">
+          <button class="mobile-top__button mobile-top__button_no-js" href="#">
             <svg width="50" height="50">
               <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
             </svg>
-          </a>
+          </button>
         </div>
         <h1>
           Мы продаем велосипеды
@@ -120,7 +120,7 @@
               <source media="(max-width: 1023px)" srcset="img/road-bike-tablet@1x.webp 1x, img/road-bike-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1024px)" srcset="img/road-bike-desktop@1x.webp 1x, img/road-bike-desktop@2x.webp 2x" type="image/webp">
               <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/road-bike-desktop@1x.jpg" alt="Велосипед на фоне стены" width="342" height="503">
+              <img src="img/road-bike-desktop@1x.jpg" srcset="img/road-bike-desktop@2x.jpg 2x" alt="Велосипед на фоне стены" width="342" height="503">
             </picture>
           </div>
           <p>Дорожный велосипед</p>
@@ -131,7 +131,7 @@
               <source media="(max-width: 1023px)" srcset="img/mountain-bike-tablet@1x.webp 1x, img/mountain-bike-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1024px)" srcset="img/mountain-bike-desktop@1x.webp 1x, img/mountain-bike-desktop@2x.webp 2x" type="image/webp">
               <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/mountain-bike-desktop@1x.jpg" alt="Велосипед в горах" width="342" height="566">
+              <img src="img/mountain-bike-desktop@1x.jpg" srcset="img/mountain-bike-desktop@2x.jpg 2x" alt="Велосипед в горах" width="342" height="566">
             </picture>
           </div>
           <p>Горный велосипед</p>
@@ -142,7 +142,7 @@
               <source media="(max-width: 1023px)" srcset="img/small-bike-tablet@1x.webp 1x, img/small-bike-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1024px)" srcset="img/small-bike-desktop@1x.webp 1x, img/small-bike-desktop@2x.webp 2x" type="image/webp">
               <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/small-bike-desktop@1x.jpg" alt="Розовый велосипед" width="342" height="512">
+              <img src="img/small-bike-desktop@1x.jpg" srcset="img/small-bike-desktop@2x.jpg 2x" alt="Розовый велосипед" width="342" height="512">
             </picture>
           </div>
           <p>Детский велосипед</p>
@@ -164,10 +164,10 @@
             <source media="(max-width: 1023px)" srcset="img/video-preview-tablet@1x.webp 1x, img/video-preview-tablet@2x.webp 2x" type="image/webp">
             <source media="(min-width: 1024px)" srcset="img/video-preview-desktop@1x.webp 1x, img/video-preview-desktop@2x.webp 2x" type="image/webp">
             <!-- 1х: 929px; 2x: 1858px -->
-            <img src="img/video-preview-desktop@1x.jpg" alt="Видео про велосипеды" width="929" height="522">
+            <img src="img/video-preview-desktop@1x.jpg" srcset="img/video-preview-desktop@2x.jpg 2x"  alt="Видео про велосипеды" width="929" height="522">
           </picture>
-          <button class="videos-about-bicycles__play-button">
-            <svg width="65" height="65">
+          <button type="button" class="videos-about-bicycles__play-button button button_round">
+            <svg width="13" height="18">
               <use xlink:href="img/sprite_auto.svg#icon-play"></use>
             </svg>
             <span class="visually-hidden">
@@ -191,7 +191,7 @@
       <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" type="image/webp">
       <source media="(min-width: 1024px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
       <!-- 1х: 957px; 2x: 1914px -->
-      <img src="img/map-desktop@1x.png" alt="Карта" width="957" height="530">
+      <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" alt="Карта" width="957" height="530">
     </picture>
     <div class="page-footer__contacts">
       <a class="page-footer__link page-footer__link_email" href="mailto:puteshestviemechta@gmail.ru">
