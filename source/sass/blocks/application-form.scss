@@ -29,7 +29,9 @@
   border-radius: 4px;
   border: 1px solid $border-grey;
   appearance: none;
-
+  font-family: $base-font;
+  font-size: 15px;
+  line-height: 24px;
 
   &:hover {
     opacity: 0.8;
@@ -74,7 +76,7 @@
   letter-spacing: 0.3px;
   appearance: none;
   background-color: transparent;
-  overflow: visible;
+  // overflow: visible;
 }
 
 .application-form__field input::-moz-placeholder {
